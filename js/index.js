@@ -40,3 +40,61 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+
+
+const
+  pageContainer = document.querySelector('.container'),
+
+  header = document.querySelector('header'),
+  nav = document.querySelector('nav'),
+
+  navA = document.querySelectorAll('a'),
+  logoImage = document.querySelector('#logo-img'),
+  
+
+  //cta hero section
+
+  ctaSection = document.querySelector('.cta'),
+  ctaText = document.querySelector('.cta-text'),
+
+  ctaH1 = document.querySelector('h1'),
+  ctaButton = document.querySelector('button'),
+  ctaImage = document.querySelector('#cta-img'),
+
+
+  //declare main section
+
+  mainContent = document.querySelector('.main-content'),
+  topContent = document.querySelector('.top-content'),
+
+  //sections that repeat
+  sectionContainers = document.querySelectorAll('.text-content'),
+  sectionHeaders = document.querySelectorAll('h4'),
+  sectionText = document.querySelectorAll('p'),
+
+  //middle image 
+
+  middleImage = document.querySelector('#middle-img'),
+
+  //bottom content
+
+  bottomContent = document.querySelector('.bottom-content'),
+
+  contactSection = document.querySelector('.contact'),
+
+  footer = document.querySelector('footer');
+  console.log(footer);
+  
+  
+
+ctaH1.textContent = siteContent['cta']['h1'];
+ctaButton.textContent = siteContent['cta']['button'];
+ctaImage.setAttribute('src', siteContent['cta']['img-src']);
+
+middleImage.setAttribute('src', siteContent['main-content']['middle-img-src'])
+
+sectionHeaders[1].textContent = siteContent['main-content']['features-h4'];
+
+sectionHeaders.map(i => console.log(i))
